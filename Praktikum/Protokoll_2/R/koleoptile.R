@@ -1,0 +1,1 @@
+Table_1 <- read.csv("~/Dropbox/Uni/Bio/Pflanzenphysiologie/Praktikum/Protokoll_2/R/Versuch_2.1.csv")
