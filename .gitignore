@@ -1,0 +1,9 @@
+# Latex
+#########
+
+*.aux
+*.log
+*.gz
+*.dvi
+*.pdf
+
