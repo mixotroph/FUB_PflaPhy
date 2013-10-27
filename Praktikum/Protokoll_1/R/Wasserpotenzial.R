@@ -1,6 +1,5 @@
 # Daten einlesen
 Table_1 <- read.csv("~/Uni/Biologie/Pflanzenphysiologie/Praktikum/Protokoll_1/R/Versuch_1.1.csv")
-dev.off()
 par(las=1)
 
 # Spline zur Interpolation der Messwerte berechnen

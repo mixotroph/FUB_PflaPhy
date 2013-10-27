@@ -1,6 +1,7 @@
 \documentclass[11pt,a4paper,DIV=10,]{scrartcl}
 %\usepackage[latin1]{inputenc}
 \usepackage[utf8]{inputenc}
+\usepackage{lmodern}
 \usepackage[ngerman]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -13,7 +14,7 @@
 % Define user colors using the RGB model
 \definecolor{dunkelgrau}{rgb}{0.8,0.8,0.8}
 \definecolor{hellgrau}{rgb}{0.95,0.95,0.95}
-
+\usepackage{booktabs}
 \usepackage[normal,font={small,color=black}, labelfont=bf,figurename=Abb.]{caption}
 \usepackage{float}
 \usepackage{cite}
@@ -21,36 +22,46 @@
 \bibliographystyle{unsrtnat}
 \usepackage[numbers]{natbib}
 \usepackage[T1]{fontenc}
-\usepackage{booktabs}
-
+%
 \begin{document}
 \onecolumn
 \subsection*{Versuchsprotokoll zum 1. Kurstag }
-\section*{Hemmung der Blattseneszenz durch Cytokinin anhand des Chlorophyll-Abbaus}
-\textbf{Christoph van Heteren-Frese\footnotemark[1]} \\[0.1cm]
+\section*{Zum Wasserhaushalt von Pflanzen -- Bestimmung des osmotischen Potentials bei \textit{Solanum Tuberosum}}
+\textbf{Christoph van Heteren-Frese\footnotemark[1], Jana Jerosch\footnotemark[1], Nora Pauli\footnotemark[1]} \\[0.1cm]
 \footnotemark[1]Freie Universität Berlin\\[0.2cm]
 Eingereicht am 13.11.2012\\
 \hrule
-
+%
 \section*{Einleitung}    
 Das vorliegende Protokoll wurde von den Autoren im Rahmen des pflanzenphysiologischen Grundpraktikums als Bestandteil des Moduls Physiologie und Biochemie der Pflanzen und Tiere der Freien Universität Berlin verfasst. 
 
 
 \section*{Material und Methoden}
+\subsection*{Material}
+Der Rest der bereits im vorigen Versuch benutzten Kartoffel
+\subsection*{Kryoskopie}
+Da der Gefrierpunkt eines Lösungsmittels durch Zugabe von löslichen Substanzen erniedrigt wird, 
+\citep[vgl.][S. 261]{strasburger_lehrbuch_2012}
 %\input{Material_und_Methoden}
 %\section*{Ergebnisse und Diskussion}
 
 \section*{Ergebnisse}
-
-% Hier beginnt das erste Bild 
-\begin{figure}[H]
-\center
-\captionsetup{width=1\textwidth}	
-\includegraphics[width=1\textwidth]{Abbildungen/Rplot.eps}
-\caption{Gewichtszu- bzw. Abnahme..}
-\label{v1}
-\end{figure}
-
+Die Messung ergab einen Wert von 346 mOsm/kg. Durch die Verhältnisgleichung
+\begin{equation}
+\dfrac{-24,8 \cdot 10^5 \textrm{~Pa}}{1 \textrm{~Osm} } = \dfrac{x}{0,346 \textrm{~Osm}}
+\end{equation}
+lässt sich das osmotische Potential \textbf{des Zellinhalts} berechnen:
+\begin{equation}
+x = \dfrac{-24,8 \cdot 10^5 \textrm{~Pa} \cdot 0,346 \textrm{~Osm}}{1 \textrm{~Osm} } = -0,858 \textrm{~MPa}
+\end{equation}
+Mit dem Ergebnis der Kompensationsmethode lässt sich das Druckpotential (\textbf{Turgor}) berechnen:
+\begin{equation}
+\Psi_p=\Psi_W-\Psi_S=-0,56 \textrm{~MPa} - (-0,86 \textrm{~MPa})= 0,3 \textrm{~MPa}
+\end{equation}
 \section*{Diskussion}
+Das Ergebniss der Messung entspricht den Erwartungen.
 
+Der Vergleich der Werte..
+\bibliographystyle{agsm}
+\bibliography{pflaphy}
 \end{document}
